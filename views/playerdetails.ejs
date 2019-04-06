@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="../../node_modules/materialize-css/dist/css/materialize.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- <script src="../../node_modules/materialize-css/dist/js/materialize.min.js"></script> -->
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script> -->
+    <script src="../../node_modules/chart.js/dist/Chart.min.js"></script>
+    <link rel="stylesheet" href='../css/Result.css'>
+    <!-- <script src="../js/custom.js"></script> -->
+    <!-- <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <title>Document</title>
+    <!-- <script src="../js/UseChartJS.js">
+
+
+
+    </script> -->
+</head>
+
+<body>
+
+   <h3>PLAYER DETAILS BY MONTH  (<%=MonthName.toUpperCase()%>)</h3>
+    <div class="StudentExternaltdetails_Container">
+
+        <!-- <h5>TOP 10 PLAYER</h5> -->
+        <table>
+            <thead>
+                <tr>
+
+                    <th>PLAYER ATTRIBUTE</th>
+                    <th>PLAYER VALUES</th>
+
+
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>
+                        PLAYER NAME
+                    </td>
+                    <td>
+                        <%= Data.name%>
+                    </td>
+                </tr>
+                 
+                <tr>
+                    <td>
+                        PLAYER ID
+                    </td>
+                    <td>
+                        <%= Data.playerid%>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        PLAYER COUNTY | COUNTRY
+                    </td>
+                    <td>
+                        <%= Data.country%>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        PLAYER PREVIOUS RANK
+                    </td>
+                    <td>
+                        <%= Data.months['pre']%>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        PLAYER CURRENT RANK
+                    </td>
+                    <td>
+                        <%= Data.months['pos']%>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        PLAYER INACTIVE PERIOD
+                    </td>
+                    <td>
+                        <%= Data.months['incativeperiod']%>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        PLAYER POINTS
+                    </td>
+                    <td>
+                        <%= Data.months['points']%>
+                    </td>
+                </tr>
+             
+                
+            </tbody>
+
+        </table>
+    </div>
+
+
+
+</body>

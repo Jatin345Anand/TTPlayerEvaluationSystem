@@ -1,0 +1,21 @@
+body{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    /* background-color: antiquewhite; */
+    /* color: brown; */
+    text-align: center;
+}
+#selectname{
+    padding-left: 400px;
+    padding-right: 400px;
+    /* padding-left: 50%;
+    padding-right: 50%; */
+}
+#selectmonth{
+    padding-left: 450px;
+    padding-right: 400px;
+}
+/* #consolidated{
+    
+    /* text-align: 23%; */

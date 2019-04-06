@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="../../node_modules/materialize-css/dist/css/materialize.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- <script src="../../node_modules/materialize-css/dist/js/materialize.min.js"></script> -->
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script> -->
+    <script src="../../node_modules/chart.js/dist/Chart.min.js"></script>
+    <link rel="stylesheet" href='../css/Result.css'>
+    <!-- <script src="../js/custom.js"></script> -->
+    <!-- <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <title>Document</title>
+    <!-- <script src="../js/UseChartJS.js">
+
+
+
+    </script> -->
+
+</head>
+
+<body>
+
+
+    <div class="StudentExternaltdetails_Container">
+
+        <h5>ALL PLAYER</h5>
+
+        <table id="tb">
+            <thead>
+                <tr>
+                    <th>PLAYER RANK</th>
+                    <th>PLAYER NAME</th>
+                    <th>PLAYER ID</th>
+                    <th>PLAYER COUNTY</th>
+                    <!-- <th>DEC CURRENT RANK</th>
+                    <th>DEC PREVIOUS RANK</th>
+                    <th>DEC INACIVE PERIOD</th> -->
+                    <th>DEC POINTS</th>
+                    <!-- <th>JAN CURRENT RANK</th>
+                    <th>JAN PREVIOUS RANK</th>
+                    <th>JAN INACIVE PERIOD</th> -->
+                    <th>JAN POINTS</th>
+                    <!-- <th>FEB CURRENT RANK</th>
+                    <th>FEB PREVIOUS RANK</th>
+                    <th>FEB INACIVE PERIOD</th> -->
+                    <th>FEB POINTS</th>
+
+                </tr>
+            </thead>
+            <% var i1=1;%>
+            <% for(var k1 in Data){%>
+            <tbody>
+                <tr>
+                    <td>
+                        <%=i1%>
+                    </td>
+                    <td>
+                        <%=  Data[k1].name%>
+                    </td>
+                    <td>
+                        <%= Data[k1].playerid%>
+                    </td>
+                    <td>
+                        <%= Data[k1].country%>
+                    </td>
+                    <% for(let [k3,v3] of Object.entries(Data[k1].months)){%>
+                    <% if(k3.length>0){ %>
+                    <!-- <td>
+                        <%=Data[k1].months[k3]['currentrank']%>
+                    </td>
+                    <td>
+                        <%=v3['previousrank']%>
+                    </td>
+                    <td>
+                        <%=v3['inactiveperiod']%>
+                    </td> -->
+                    <td>
+                        <%=v3['points']%>
+                    </td>
+                    <%}%>
+                    <%}%>
+                </tr>
+
+            </tbody>
+
+            <% i1 = i1+1%>
+            <%}%>
+            </table>
+        </div>
+
+
+</body>

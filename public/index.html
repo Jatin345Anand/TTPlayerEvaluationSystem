@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PLAYER|EVALUATION SYSTEM| TABLE TENIS</title>
+  <!-- <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+           
+   
+  <link rel="stylesheet" href="./css/design.css">
+  <!-- <link rel="icon" href="demo_icon.gif" type="./assets/imag" sizes="16x16"> -->
+   
+</head>
+
+<body>
+
+  <h3>WELCOME TO PLAYER EVALUATION SYSTEM</h3>
+  <h5 id="consolidated">CONSOLIDATED DATA OF PLAYER NAME | MONTHS</h5>
+  <h5>PLAYER DETAILS SEARCH ENGINE</h5>
+  <form action="dosearch" method="POST">
+    <!-- <div class="row enroll">
+      <div class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix"> </i>
+            <label for="autocomplete-input">PREVIOUS POSITION</label>
+            <input name="preposition" type="text" id="autocomplete-input" class="autocomplete">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row enroll">
+      <div class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix"> </i>
+            <label for="autocomplete-input">CURRENT POSITION</label>
+            <input name="position" type="text" id="autocomplete-input" class="autocomplete">
+
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div id="selectname" class="row enroll">
+      <div class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix"> </i>
+            <label for="autocomplete-input">PLAYER NAME</label>
+            <input type="text" name="name" id="autocomplete-input" class="autocomplete">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="row enroll">
+      <div class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix"> </i>
+            <label for="autocomplete-input">COUNTRY NAME</label>
+            <input type="text" name="countryname" id="autocomplete-input" class="autocomplete">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row enroll">
+      <div class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix"> </i>
+            <label for="autocomplete-input">POINTS</label>
+            <input type="text" name="points" id="autocomplete-input" class="autocomplete">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row enroll">
+      <div class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix"> </i>
+            <label for="autocomplete-input">PLAYER PERIODS</label>
+            <input type="text" name="period" id="autocomplete-input" class="autocomplete">
+
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- Dropdown Trigger -->
+  <!-- <a class='dropdown-trigger btn' href='' data-target='dropdown1'>Drop Me!</a> -->
+
+  <!-- Dropdown Structure -->
+  <!-- <ul id='dropdown1' class='dropdown-content'>
+    <li><a >one</a></li>
+    <li><a href="#!">two</a></li>
+    <li class="divider" tabindex="-1"></li>
+    <li><a href="#!">three</a></li>
+    <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+    <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+  </ul> -->
+ 
+  
+  <!-- <div class="input-field col s12">
+    <select>
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+    <label>Materialize Select</label>
+  </div> -->
+  <!-- <div class="input-field col s12">
+    <select>
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+    <label>Materialize Select</label>
+  </div> -->
+
+  <!-- <div class="input-field col s12">
+    <select multiple>
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+    <label>Materialize Multiple Select</label>
+  </div> -->
+
+  <!-- <div class="input-field col s12">
+    <select>
+      <optgroup label="team 1">
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+      </optgroup>
+      <optgroup label="team 2">
+        <option value="3">Option 3</option>
+        <option value="4">Option 4</option>
+      </optgroup>
+    </select>
+    <label>Optgroups</label>
+  </div> -->
+
+  <!-- <div class="input-field col s12 m6">
+    <select class="icons">
+      <option value="" disabled selected>Choose your option</option>
+      <option value="" data-icon="images/sample-1.jpg">example 1</option>
+      <option value="" data-icon="images/office.jpg">example 2</option>
+      <option value="" data-icon="images/yuna.jpg">example 3</option>
+    </select>
+    <label>Images in select</label>
+  </div> -->
+  <!-- <div class="input-field col s12 m6">
+    <select class="icons">
+      <option value="" disabled selected>Choose your option</option>
+      <option value="" data-icon="images/sample-1.jpg" class="left">example 1</option>
+      <option value="" data-icon="images/office.jpg" class="left">example 2</option>
+      <option value="" data-icon="images/yuna.jpg" class="left">example 3</option>
+    </select>
+    <label>Images in select</label>
+  </div> -->
+ <!-- <h4>SELECT BY MONTH</h4> -->
+  <!-- <label>Browser Select</label> -->
+  <div id="selectmonth">
+  <select  name="selmonth" class="browser-default">
+    <option value="0" disabled selected name='selectmonth'>Select Month</option>
+    <option value="1" name='dec'>December</option>
+    <option value="2" name='jan'>January</option>
+    <option value="3" name='feb'>February</option>
+  </select>
+</div> 
+  <!-- <hr> -->
+  <br>
+    <button class="btn waves-effect waves-light" type="submit" name="action">SEARCH PLAYER DETAILS
+
+    </button>
+    &nbsp; &nbsp;
+    
+    <!-- <input class="btn waves-effect waves-light" name="serchtop10" type="submit" value="GET TOP 10 PLAYER" /> -->
+
+  </form>
+<hr>
+  <form action="/gettradeanalysis" method="post">
+    <h5> TRADE ANALYSIS </h5>
+  <h5>TOP  PLAYER MOVEMENT IN 3 MONTHS BY POINTS</h5>
+  <!-- <p>
+    <label>
+      <input type="radio" name="group1"  />
+      <span>INCREMENT (+)</span>
+    </label>
+  </p>
+  <p>
+    <label>
+      <input type="radio" name="group2"   />
+      <span>DECREMENT (-)</span>
+    </label>
+  </p> -->
+  
+  
+  
+    <!-- <input type="radio" name="gender" value="male" checked> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Other   -->
+
+  <input class="btn waves-light" name="in" type="submit" value="INCREMENT (+)"/>
+   &nbsp; &nbsp;
+   <input class="btn waves-light " name="de" type="submit" value="DECREMENT (-)"/>
+   
+  </form>
+<hr>
+  <form action="/getcounty" method="post">
+    <h5> COUNTY REPRESENTATION </h5>
+  <h5>TOP COUNTY IN 3 MONTHS BY INACTIVE PERIOD  </h5>
+  <br>
+  <div id="selectmonth">
+      <select  name="selmonth" class="browser-default">
+        <option value="0" disabled selected name='selectmonth'>Select Month</option>
+        <option value="1" name='dec'>December</option>
+        <option value="2" name='jan'>January</option>
+        <option value="3" name='feb'>February</option>
+      </select>
+    </div> 
+    <br> 
+  <input class="btn waves-light" name="in" type="submit" value="HIGHEST"/>
+   &nbsp; &nbsp;
+   <input class="btn waves-light" name="de" type="submit" value="LOWEST"/>
+   
+  <!-- </form>
+  <hr>
+  <form action="/gettop10" method="POST">
+    <input class="btn waves-effect waves-light" name="serchtop10" type="submit" value="GET TOP 10"/>
+ 
+</form> -->
+</body>
+
+</html>

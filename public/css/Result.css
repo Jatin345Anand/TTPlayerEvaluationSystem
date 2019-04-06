@@ -1,0 +1,19 @@
+ 
+body{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    /* background-color: turquoise; */
+}
+h4{
+    text-align: center;
+}
+.StudentExternaltdetails_Container{
+    width: 100%;
+}
+#tb{
+    /* background-color: yellow; */
+    width: 100%;
+}
